@@ -13,7 +13,13 @@ def long_planeteer_calls(calls)# code an argument here
   calls.any? {|call| call.length > 4}
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  if array.detect?(cheese_types) != nil
+    cheese = array.detect?(cheese_types)
+    return cheese
+  else
+    return nil
+  end
 end
